@@ -1,3 +1,5 @@
+$max_width = unit(hexo-config('custom_cfg.post_max_width') || "1200", 'px')
+
 #body-wrap
   display: flex
   flex-direction: column
@@ -8,7 +10,7 @@
   flex: 1 auto
   margin: 0 auto
   padding: 40px 15px
-  max-width: 1200px
+  max-width: $max_width
   width: 100%
 
   +maxWidth900()
